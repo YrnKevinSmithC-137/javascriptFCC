@@ -1,0 +1,13 @@
+** start of script.js **
+
+function booWho(n){
+  if(n===true||n===false){
+    return true;} 
+     else{
+       return false;
+     }
+     }
+console.log(booWho(1));
+
+** end of script.js **
+
