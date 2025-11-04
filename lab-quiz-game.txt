@@ -1,0 +1,33 @@
+** start of script.js **
+
+const questions=[{category:"qn1",question:"name ?",choices:["bonarpate","lincoln","einstein"] ,answer:"einstein",
+},
+{category:"qn2",question:"name ?",choices:["bonarpate","lincoln","einstein"] ,answer:"einstein",
+}
+,{category:"qn3",question:"name ?",choices:["bonarpate","lincoln","einstein"] ,answer:"einstein",
+},{category:"qn4",question:"name ?",choices:["bonarpate","lincoln","einstein"] ,answer:"einstein",
+},
+{category:"qn5",question:"name ?",choices:["bonarpate","lincoln","einstein"] ,answer:"einstein",
+},
+{category:"qn1",question:"name ?",choices:["bonarpate","lincoln","einstein"] ,answer:"einstein",
+}]
+const getRandomQuestion=(qns)=>{
+   let qns1= Math.floor(Math.random() * qns.length)
+   return qns[qns1]
+}
+const getRandomComputerChoice=(qns)=>{let qns1= Math.floor(Math.random() * qns.length)
+
+   return qns[qns1]}
+   console.log(getRandomComputerChoice(questions))
+const getResults=(res)=>{
+  if (res.answer=="einstein"){
+    return "The computer's choice is correct!"
+  }
+  else{
+    return `The computer's choice is wrong. The correct answer is: ${res.answer}`
+  }
+}
+console.log(`The computer's choice is wrong. The correct answer is: ${questions[0].answer}`)
+
+** end of script.js **
+
