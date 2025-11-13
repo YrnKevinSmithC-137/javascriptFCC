@@ -1,0 +1,17 @@
+** start of script.js **
+
+const findLongestWordLength=(string)=>{
+  let g=string.split(" ")
+  let f=''
+  for (let i = 0; i < g.length; i++) {
+    if (g[i].length > f.length) {
+      f = g[i];}
+  }
+    return f.length
+  
+}
+
+console.log(findLongestWordLength("What if we try a super-long word such as otorhinolaryngology"))
+
+** end of script.js **
+
