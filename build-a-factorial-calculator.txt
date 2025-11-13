@@ -1,0 +1,20 @@
+** start of script.js **
+
+let num=7;
+
+const factorialCalculator=(num)=>{
+  let result=1;
+  let g=1
+do {
+  g*=num
+  num--;
+} while (num>result);
+  
+  return g
+}
+let factorial=factorialCalculator(num)
+let resultMsg=`Factorial of ${num} is ${factorial}`
+console.log(resultMsg)
+
+** end of script.js **
+
