@@ -1,0 +1,96 @@
+** start of script.js **
+
+let contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
+const lookUpProfile=(name,lastName)=>{
+  if(name=="Akira"){
+    if(lastName=="lastName"){
+      return contacts[0]["lastName"]
+    }
+    else if(lastName=="likes"){
+      return contacts[0]["likes"]
+    }
+    else if(lastName=="number"){
+      return contacts[0]["number"]
+    }
+    else {
+   return "No such property"
+  }
+  }
+     else if(name=="Kristian"){
+    if(lastName=="lastName"){
+      return contacts[3]["lastName"]
+    }
+    else if(lastName=="likes"){
+      return contacts[3]["likes"]
+    }
+    else if(lastName=="number"){
+      return contacts[3]["number"]
+    }
+    else {
+   return "No such property"
+  }}
+    else if(name=="Sherlock"){
+    if(lastName=="lastName"){
+      return contacts[3]["lastName"]
+    }
+    else if(lastName=="likes"){
+      return contacts[2]["likes"]
+    }
+    else if(lastName=="number"){
+      return contacts[2]["number"]
+    }
+    else {
+   return "No such property"
+  }}
+    else if(name=="Harry"){
+    if(lastName=="lastName"){
+      return contacts[2]["lastName"]
+    }
+    else if(lastName=="likes"){
+      return contacts[2]["likes"]
+    }
+    else if(lastName=="number"){
+      return contacts[2]["number"]
+    }
+    else {
+   return "No such property"
+  }}
+  
+  else if(name!=contacts){
+    return "No such contact"
+  }
+  
+}
+
+    //if(){}
+  
+  
+console.log(lookUpProfile("Akira","address"))
+
+** end of script.js **
+
