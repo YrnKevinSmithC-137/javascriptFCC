@@ -1,0 +1,17 @@
+** start of script.js **
+
+const  findElement=(arr,func)=>{
+  let g=[]
+  arr.forEach(function(arr) {
+    if(func(arr)){
+  g.push(arr);}
+  else{
+    return undefined
+  }
+})
+return (g[0])
+}
+console.log(findElement([2, 4, 6, 8], function(num) { return num % 2 === 0; }))
+
+** end of script.js **
+
