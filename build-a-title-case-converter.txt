@@ -1,0 +1,27 @@
+** start of script.js **
+
+// Source - https://stackoverflow.com/a
+// Posted by Mustafa Çetin
+// Retrieved 2025-12-09, License - CC BY-SA 3.0
+
+function titleCase(str) {
+   var ret = "";
+   var upperCase = true;
+   for (var i = 0; i < str.length; i++) {
+    var chr = str.charAt(i);
+    if(upperCase) {
+      ret += chr.toUpperCase();
+    }
+    else{
+      ret += chr.toLowerCase();
+    }
+    upperCase = chr == " ";
+  }
+  return ret;
+}
+titleCase("I'm a little tea pot");
+titleCase("sHoRt AnD sToUt");
+titleCase("HERE IS MY HANDLE HERE IS MY SPOUT"); 
+
+** end of script.js **
+

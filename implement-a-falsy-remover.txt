@@ -1,0 +1,9 @@
+** start of script.js **
+
+const bouncer=(arr)=>{
+//if(arr.includes(false))
+  return arr.filter(num => num!==0&&num!==undefined&&num!==null&&num!==''&&!Number.isNaN(num)&& num !== false)}
+console.log(bouncer([null, NaN, 1, 2, undefined]))
+
+** end of script.js **
+
