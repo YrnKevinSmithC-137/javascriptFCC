@@ -1,0 +1,20 @@
+** start of script.js **
+
+const getIndexToIns=(arr,num)=>{
+  let arr1= arr.sort((a,b)=>a-b)
+ console.log(arr1)
+  if(arr[0]===num||arr.length===0){
+    return 0
+  }
+ let g1=[...arr.slice(-1)]
+ if(g1<num){
+    let g2=arr.findIndex(ar=>ar>=num)
+    return g2+4
+ }
+ let g=arr.findIndex(ar=>ar>=num)
+ return g
+}
+console.log(getIndexToIns([3, 10, 5], 11))
+
+** end of script.js **
+

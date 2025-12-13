@@ -1,0 +1,19 @@
+** start of script.js **
+
+const diffArray=(arr,arr1)=>{
+let g=[...arr]
+g.push(...arr1)
+console.log(g)
+
+if(arr.length>arr1.length){
+return g.filter(ar => !arr1.includes(ar))
+}
+else if(arr.length<arr1.length){
+return g.filter(ar => !arr1.includes(ar)+ !arr.includes(ar))}
+else{
+  return []
+}}
+console.log(diffArray(["car", "bike", "bus"], ["bike", "train", "plane", "bus"]))
+
+** end of script.js **
+

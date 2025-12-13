@@ -1,0 +1,8 @@
+** start of script.js **
+
+const destroyer=(yup,...arr)=>{
+  return yup.filter(ar => !arr.includes(ar))}
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3))
+
+** end of script.js **
+

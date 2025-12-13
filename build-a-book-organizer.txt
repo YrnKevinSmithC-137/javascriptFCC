@@ -1,0 +1,35 @@
+** start of script.js **
+
+let books=[{title:"one piece",authorName:"oda",releaseYear:1997},
+{title:"hxh",authorName:"togashi",releaseYear:1998},
+{title:"fmab",authorName:"arakawa",releaseYear:200}]
+let filteredBooks=books.filter(boo=>boo.releaseYear>1950)
+console.log(filteredBooks)
+
+const sortByYear=(book1,book2)=>{
+  if(book1.releaseYear<book2.releaseYear){
+    return -1
+  }
+  else if(book1.releaseYear>book2.releaseYear){
+    return 1
+  }
+  else{
+    return 0
+  }
+}
+filteredBooks.sort(sortByYear)
+console.log(filteredBooks)
+
+/*if(book1.map(boo=>boo.releaseYear)>book2.map(bo=>bo.releaseYear)){
+    return -1
+  }
+  else if(book1.map(boo=>boo.releaseYear)<book2.map(bo=>bo.releaseYear)){
+    return -1
+  }
+  else if(book1.map(boo==boo.releaseYear)>book2.map(bo=>bo.releaseYear)){
+    return -1
+  }
+*/
+
+** end of script.js **
+
